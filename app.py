@@ -1,5 +1,27 @@
 from flask import Flask
-from api.menu import menu
+from flask_cors import CORS
+from flywheel import Engine
+import logging
 
-app = Flask(__name__)
-app.register_blueprint(menu)
+from api.menu import menu
+from api.cart import cart
+from api.models.cart import Cart
+from api.models.next_ids import NextIds
+
+dynamo = Engine()
+dynamo.register(Cart)
+dynamo.register(NextIds)
+dynamo.connect_to_region('us-east-1')
+dynamo.create_schema()
+
+def create_app():
+  app = Flask(__name__)
+
+  CORS(app, supports_credentials=True)
+  app.register_blueprint(menu)
+  app.register_blueprint(cart)
+
+  return app
+
+def logger():
+  return logging.getLogger('flask')

@@ -1,0 +1,2480 @@
+{
+  "menuCategories": [
+    {
+      "id": "-2",
+      "subtitle": "",
+      "title": "Popular Items",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60634387",
+          "description": "Most popular. Swiss and American cheese, lettuce and tomato. Served with choice of sauce.",
+          "isTempDeactivated": null,
+          "price": 649,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=400,height=224,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/f781329b-1789-49c6-bf75-e4f1d92e90be-retina-large.jpg",
+          "name": "Chicken Fingers Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626905",
+          "description": "Most popular. Made with lettuce, tomato, cucumber slices, pepperoncini, Greek olives, beets, chickpeas, Feta cheese and Leo's famous Greek dressing. Served with grilled pita.",
+          "isTempDeactivated": null,
+          "price": 525,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=400,height=224,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/85d48ca9-8eb8-4260-b500-31c2407150e9-retina-large.jpg",
+          "name": "Leo's Famous Greek Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60631866",
+          "description": "Served with lettuce, tomato and pickle.",
+          "isTempDeactivated": null,
+          "price": 549,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=400,height=224,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/50a1571d-b97e-4fe2-9f61-5ceef0546e34-retina-large.jpg",
+          "name": "1/3 lb. Cheeseburger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60632810",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 529,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=400,height=224,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/50a1571d-b97e-4fe2-9f61-5ceef0546e34-retina-large.jpg",
+          "name": "1/2 lb. Leo's Burger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "142131809",
+          "description": "lettuce ,tomato ,swiss and american ,ranch",
+          "isTempDeactivated": null,
+          "price": 649,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=400,height=224,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/6821daa7-4b9e-41e6-b22b-8d92b88efb79-retina-large-jpeg",
+          "name": "Grilled chicken finger pita",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390095",
+      "subtitle": "",
+      "title": "Soups 'n' Salads",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "146305748",
+          "description": "Chopped romaine, tomatoes, cucumbers, red onion, green pepper, pita chips, tossed with olive oil and lemon juice dressing.",
+          "isTempDeactivated": null,
+          "price": 700,
+          "imageUrl": null,
+          "name": "Fattoush Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60624216",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 299,
+          "imageUrl": null,
+          "name": "Soups",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "142193392",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 349,
+          "imageUrl": null,
+          "name": "bowl Chicken noodle soup",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60624452",
+          "description": "Served with grilled pita.",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Soup & Small Greek Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60625665",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Quart of Soup to Go",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60625711",
+          "description": "Crisp lettuce, tomato slices and cucumber slices. Served with grilled pita and choice of dressing.",
+          "isTempDeactivated": null,
+          "price": 545,
+          "imageUrl": null,
+          "name": "Tossed Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60625960",
+          "description": "Crisp lettuce, white tuna, cucumber, tomato and egg. Served with grilled pita and choice of dressing.",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "Tuna Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626098",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 279,
+          "imageUrl": null,
+          "name": "Cottage Cheese",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626102",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 439,
+          "imageUrl": null,
+          "name": "Cottage Cheese with Peaches",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626110",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 289,
+          "imageUrl": null,
+          "name": "Coleslaw",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626362",
+          "description": "Crisp lettuce, tomato, onions, black olives, loose ground beef and Cheddar cheese. Served with grilled pita and choice of dressing.",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "Taco Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626448",
+          "description": "Lettuce, tomato, turkey slices and hard-boiled egg. Served with grilled pita and choice of dressing.",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "Turkey Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626483",
+          "description": "Crisp lettuce and julienne of ham, cheese, tomato and turkey with hard-boiled egg. Served with grilled pita and choice of dressing.",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "Chef's Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626508",
+          "description": "Served with grilled pita and choice of dressing.",
+          "isTempDeactivated": null,
+          "price": 749,
+          "imageUrl": null,
+          "name": "Michigan Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626690",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 99,
+          "imageUrl": null,
+          "name": "Pita Bread",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626705",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 90,
+          "imageUrl": null,
+          "name": "Side of Tzatziki Sauce",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626716",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 275,
+          "imageUrl": null,
+          "name": "Tzatziki Sauce",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626726",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 100,
+          "imageUrl": null,
+          "name": "Side of Feta Cheese",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626813",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 199,
+          "imageUrl": null,
+          "name": "Side of Hummus",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60626905",
+          "description": "Most popular. Made with lettuce, tomato, cucumber slices, pepperoncini, Greek olives, beets, chickpeas, Feta cheese and Leo's famous Greek dressing. Served with grilled pita.",
+          "isTempDeactivated": null,
+          "price": 525,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/85d48ca9-8eb8-4260-b500-31c2407150e9-retina-large.jpg",
+          "name": "Leo's Famous Greek Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60627267",
+          "description": "Crisp lettuce, tomato, cucumber slices, bacon, avocado, croutons and Cheddar cheese. Served with grilled pita and choice of dressing.",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "Garden Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60628114",
+          "description": "Crisp lettuce with hard salami, Swiss cheese, ham, tomato, cucumber and hard-boiled egg. Served with grilled pita and choice of dressing.",
+          "isTempDeactivated": null,
+          "price": 699,
+          "imageUrl": null,
+          "name": "Antipasto",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60628365",
+          "description": "Most popular. Crisp lettuce, tomato, hard-boiled egg, cucumber, red onion and Cheddar cheese. Served with grilled pita and choice of dressing.",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "Chicken Fingers Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60628528",
+          "description": "With tomato, cucumber, green pepper, beets, Greek olives, pepperoncini, onions, Feta cheese and Leo's famous Greek dressing. Served with grilled pita.",
+          "isTempDeactivated": null,
+          "price": 625,
+          "imageUrl": null,
+          "name": "Village Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60628871",
+          "description": "Served with romaine, croutons, Parmesan cheese and traditional Caesar dressing. Served with grilled pita.",
+          "isTempDeactivated": null,
+          "price": 625,
+          "imageUrl": null,
+          "name": "Caesar Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60628961",
+          "description": "Spring mix, tomatoes, cucumbers, avocado, egg, bacon, crumbled Bleu cheese and grilled chicken. Served with grilled pita and choice of dressing.",
+          "isTempDeactivated": null,
+          "price": 975,
+          "imageUrl": null,
+          "name": "Cobb Salad",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390096",
+      "subtitle": "",
+      "title": "Sandwiches",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60629267",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 399,
+          "imageUrl": null,
+          "name": "Grilled Cheese Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629328",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Grilled Cheese with Ham Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629372",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Grilled Cheese with Bacon Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629386",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Grilled Ham Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629403",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 525,
+          "imageUrl": null,
+          "name": "Egg Salad Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629420",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 575,
+          "imageUrl": null,
+          "name": "Egg Salad with Cheese Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629427",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 625,
+          "imageUrl": null,
+          "name": "Tuna Salad Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629435",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 675,
+          "imageUrl": null,
+          "name": "Tuna Salad with Cheese Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629455",
+          "description": "Tuna on grilled rye with melted American and Swiss cheese and grilled onions.",
+          "isTempDeactivated": null,
+          "price": 725,
+          "imageUrl": null,
+          "name": "Tuna Melt Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629471",
+          "description": "Turkey on grilled rye with melted American and Swiss cheese and grilled onions.",
+          "isTempDeactivated": null,
+          "price": 725,
+          "imageUrl": null,
+          "name": "Turkey Melt Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629525",
+          "description": "On toast.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Bacon, Lettuce & Tomato Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629552",
+          "description": "Batter-dipped cod fillet with lettuce, tomato and tartar sauce on a grilled bun.",
+          "isTempDeactivated": null,
+          "price": 625,
+          "imageUrl": null,
+          "name": "Fish Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629587",
+          "description": "Ham, two eggs, green pepper and onion on your choice of toast.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Western Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629673",
+          "description": "Ham, two eggs, green pepper and onion on your choice of toast.",
+          "isTempDeactivated": null,
+          "price": 649,
+          "imageUrl": null,
+          "name": "Western Sandwich with Cheese",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629760",
+          "description": "Grilled chicken bread dipped in buffalo sauce, topped with Bleu cheese, lettuce and tomato.",
+          "isTempDeactivated": null,
+          "price": 645,
+          "imageUrl": null,
+          "name": "Buffalo Chicken Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629788",
+          "description": "Two eggs.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Bacon & Egg Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629920",
+          "description": "Two eggs.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Sausage & Egg Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629958",
+          "description": "Two eggs.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Ham & Egg Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60629978",
+          "description": "Grilled onions, mushrooms, peppers and Swiss cheese.",
+          "isTempDeactivated": null,
+          "price": 725,
+          "imageUrl": null,
+          "name": "Philly Steak Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630012",
+          "description": "Grilled onions, mushrooms, peppers and Swiss cheese.",
+          "isTempDeactivated": null,
+          "price": 829,
+          "imageUrl": null,
+          "name": "Philly Steak with Fries Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630035",
+          "description": "Corned beef, sauerkraut, Swiss cheese and 1000 Island dressing grilled on rye.",
+          "isTempDeactivated": null,
+          "price": 835,
+          "imageUrl": null,
+          "name": "Grilled Reuben Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630067",
+          "description": "Sliced corned beef and Swiss cheese on grilled rye.",
+          "isTempDeactivated": null,
+          "price": 789,
+          "imageUrl": null,
+          "name": "Corned Beef Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630115",
+          "description": "White turkey with lettuce, tomato and mayonnaise.",
+          "isTempDeactivated": null,
+          "price": 625,
+          "imageUrl": null,
+          "name": "Turkey Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630143",
+          "description": "Triple-decker of turkey, bacon, lettuce and tomato on toast with mayonnaise.",
+          "isTempDeactivated": null,
+          "price": 749,
+          "imageUrl": null,
+          "name": "Club Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630165",
+          "description": "Lettuce, tomato, bacon and turkey on toast with mayonnaise.",
+          "isTempDeactivated": null,
+          "price": 559,
+          "imageUrl": null,
+          "name": "Leo Jr.'s Club Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630177",
+          "description": "Fried chicken with lettuce and tomato on a bun.",
+          "isTempDeactivated": null,
+          "price": 489,
+          "imageUrl": null,
+          "name": "Crispy Chicken Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630200",
+          "description": "Lettuce and tomato garnish on a bun.",
+          "isTempDeactivated": null,
+          "price": 539,
+          "imageUrl": null,
+          "name": "Chicken Breast Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630306",
+          "description": "Lettuce and tomato garnish on a bun.",
+          "isTempDeactivated": null,
+          "price": 569,
+          "imageUrl": null,
+          "name": "Chicken Breast with Cheese Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630332",
+          "description": "No bun.",
+          "isTempDeactivated": null,
+          "price": 439,
+          "imageUrl": null,
+          "name": "Chicken Breast Plain Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60630373",
+          "description": "Triple decker on white or wheat toast with ham, bacon, turkey, lettuce, tomato and American cheese with mayo.",
+          "isTempDeactivated": null,
+          "price": 779,
+          "imageUrl": null,
+          "name": "Super Club Sandwich",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390097",
+      "subtitle": "",
+      "title": "Burgers",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60630691",
+          "description": "1/3 lb. unique blend of Swiss and American cheese and with grilled onions on grilled rye.",
+          "isTempDeactivated": null,
+          "price": 525,
+          "imageUrl": null,
+          "name": "Patty Melt",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60631273",
+          "description": "Served with lettuce, tomato, onion and pickle.",
+          "isTempDeactivated": null,
+          "price": 549,
+          "imageUrl": null,
+          "name": "1/4 lb. Salmon Burger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60631289",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 549,
+          "imageUrl": null,
+          "name": "Turkey Burger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60631324",
+          "description": "Served with lettuce, tomato and pickle.",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "1/3 lb. Hamburger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60631866",
+          "description": "Served with lettuce, tomato and pickle.",
+          "isTempDeactivated": null,
+          "price": 549,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/50a1571d-b97e-4fe2-9f61-5ceef0546e34-retina-large.jpg",
+          "name": "1/3 lb. Cheeseburger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60632743",
+          "description": "Served with lettuce, tomato and pickle.",
+          "isTempDeactivated": null,
+          "price": 626,
+          "imageUrl": null,
+          "name": "1/3 lb. Cheeseburger with Bacon",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60632810",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 529,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/50a1571d-b97e-4fe2-9f61-5ceef0546e34-retina-large.jpg",
+          "name": "1/2 lb. Leo's Burger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60632830",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 559,
+          "imageUrl": null,
+          "name": "1/2 lb. Leo's Cheeseburger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60632849",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 479,
+          "imageUrl": null,
+          "name": "Garden Burger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60632889",
+          "description": "Our classic burger topped with chili, Cheddar cheese and onions.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Southwestern Burger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60633007",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 625,
+          "imageUrl": null,
+          "name": "Mushroom Swiss Burger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60633177",
+          "description": "Served with avocado, lettuce, tomato and bacon.",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "California Burger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60633208",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "Blue Cheese BLT Burger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60633285",
+          "description": "Served with gyro meat, Feta cheese and tzatziki sauce.",
+          "isTempDeactivated": null,
+          "price": 699,
+          "imageUrl": null,
+          "name": "Gyro Burger",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390093",
+      "subtitle": "",
+      "title": "Breakfast Sides",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60620871",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 99,
+          "imageUrl": null,
+          "name": "Toast",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60620884",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 99,
+          "imageUrl": null,
+          "name": "English Muffin",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622244",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 269,
+          "imageUrl": null,
+          "name": "Danish",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622266",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 299,
+          "imageUrl": null,
+          "name": "Hash Browns",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622293",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 229,
+          "imageUrl": null,
+          "name": "Grits",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622343",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 359,
+          "imageUrl": null,
+          "name": "Greek Yogurt",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622364",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 169,
+          "imageUrl": null,
+          "name": "Bagel",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622378",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 269,
+          "imageUrl": null,
+          "name": "Bagel with Cream Cheese",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622437",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 299,
+          "imageUrl": null,
+          "name": "Oatmeal",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622450",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 549,
+          "imageUrl": null,
+          "name": "Biscuits & Gravy",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622534",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 399,
+          "imageUrl": null,
+          "name": "1/2 Order Biscuits & Gravy",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622570",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 329,
+          "imageUrl": null,
+          "name": "Corned Beef Hash",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622593",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 279,
+          "imageUrl": null,
+          "name": "Side of Ham",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622620",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 279,
+          "imageUrl": null,
+          "name": "Side of Bacon",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622646",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 279,
+          "imageUrl": null,
+          "name": "Side of Sausage Links",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622666",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 279,
+          "imageUrl": null,
+          "name": "Side of Sausage Patties",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622918",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 249,
+          "imageUrl": null,
+          "name": "Kellogg's Brand Cereal",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60622937",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 279,
+          "imageUrl": null,
+          "name": "Uncle Ben's Rice",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390098",
+      "subtitle": "",
+      "title": "Pitas",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "142131809",
+          "description": "lettuce ,tomato ,swiss and american ,ranch",
+          "isTempDeactivated": null,
+          "price": 649,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/6821daa7-4b9e-41e6-b22b-8d92b88efb79-retina-large-jpeg",
+          "name": "Grilled chicken finger pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634186",
+          "description": "Served with lettuce and tomato.",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Tuna Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634254",
+          "description": "Served with lettuce and tomato.",
+          "isTempDeactivated": null,
+          "price": 729,
+          "imageUrl": null,
+          "name": "Egg Salad Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634302",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 399,
+          "imageUrl": null,
+          "name": "Grilled Cheese Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634334",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Grilled Ham & Cheese Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634352",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Bacon, Lettuce & Tomato Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634387",
+          "description": "Most popular. Swiss and American cheese, lettuce and tomato. Served with choice of sauce.",
+          "isTempDeactivated": null,
+          "price": 649,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/f781329b-1789-49c6-bf75-e4f1d92e90be-retina-large.jpg",
+          "name": "Chicken Fingers Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634529",
+          "description": "Bleu cheese, lettuce, tomato and chicken fingers dipped in buffalo sauce.",
+          "isTempDeactivated": null,
+          "price": 699,
+          "imageUrl": null,
+          "name": "Buffalo Chicken Fingers Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634679",
+          "description": "Served with lettuce, tomato, Cheddar cheese, onion and ground beef.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Taco Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634789",
+          "description": "Served with Feta cheese, lettuce, tomato, onion, beets and tzatziki sauce.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Vegetarian Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634811",
+          "description": "Served with lettuce, tomato and mayonnaise.",
+          "isTempDeactivated": null,
+          "price": 639,
+          "imageUrl": null,
+          "name": "Turkey Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634842",
+          "description": "Served with lettuce and tomato.",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "Hamburger Pita",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634860",
+          "description": "Served with lettuce and tomato.",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "Hamburger Pita with Fries",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390099",
+      "subtitle": "",
+      "title": "Munchies",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60634901",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 269,
+          "imageUrl": null,
+          "name": "French Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60634921",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 319,
+          "imageUrl": null,
+          "name": "French Fries with Cheese",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60635081",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 389,
+          "imageUrl": null,
+          "name": "Chili Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60635087",
+          "description": "Most popular.",
+          "isTempDeactivated": null,
+          "price": 429,
+          "imageUrl": null,
+          "name": "Chili cheese Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60635861",
+          "description": "Served with sour cream.",
+          "isTempDeactivated": null,
+          "price": 299,
+          "imageUrl": null,
+          "name": "Baked Potato",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60635932",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 319,
+          "imageUrl": null,
+          "name": "Seasoned Twister Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60635967",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 319,
+          "imageUrl": null,
+          "name": "Onion Rings",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60636154",
+          "description": "Served with bacon, Cheddar cheese and sour cream.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Potato Skins",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60636257",
+          "description": "Most popular.",
+          "isTempDeactivated": null,
+          "price": 449,
+          "imageUrl": null,
+          "name": "Mozzarella Cheese Sticks",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60637742",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "Jalapeño Poppers",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60638984",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 299,
+          "imageUrl": null,
+          "name": "Sweet Potato Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60639158",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 369,
+          "imageUrl": null,
+          "name": "Cheese Nachos",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60639173",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 469,
+          "imageUrl": null,
+          "name": "Chili & Cheese Nachos",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60642099",
+          "description": "Made with chili, cheese, seasoned ground beef, black olives, tomato, onion, salsa and sour cream.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Nachos Supreme",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60642265",
+          "description": "Made with ground beef, chili, Cheddar cheese, onions and bacon.",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "Stacked Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60642290",
+          "description": "Served with choice of sauce.",
+          "isTempDeactivated": null,
+          "price": 649,
+          "imageUrl": null,
+          "name": "Chicken Wings",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60642813",
+          "description": "Served with choice of sauce.",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Chicken Wings with Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60643358",
+          "description": "Served with choice of sauce.",
+          "isTempDeactivated": null,
+          "price": 579,
+          "imageUrl": null,
+          "name": "Chicken Nuggets (9 Pieces)",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60643376",
+          "description": "Served with choice of sauce.",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "Chicken Nuggets with Fries (9 Pieces)",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60643418",
+          "description": "Served with choice of sauce.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Chicken Fingers",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644633",
+          "description": "Most popular. Served with choice of sauce.",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "Chicken Fingers with Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644657",
+          "description": "Warm tortilla filled with green peppers, onions and Cheddar cheese. Served with sour cream and salsa.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Cheese Quesadilla",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644665",
+          "description": "Warm tortilla filled with green peppers, onions and Cheddar cheese. Served with sour cream and salsa.",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Cheese Quesadilla with Chicken",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644675",
+          "description": "Served with pita bread.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Hummus",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390108",
+      "subtitle": "",
+      "title": "Healthy Alternatives",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60646469",
+          "description": "Topped with cottage cheese and peaches. No bun.",
+          "isTempDeactivated": null,
+          "price": 749,
+          "imageUrl": null,
+          "name": "Gardenburger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646493",
+          "description": "Scoop of tuna with cottage cheese and peaches.",
+          "isTempDeactivated": null,
+          "price": 749,
+          "imageUrl": null,
+          "name": "Tuna Platter",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646519",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 299,
+          "imageUrl": null,
+          "name": "Daily Vegetables",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646581",
+          "description": "Spring mix, hummus, beets, cucumber, tomato, onion, olives and Feta cheese.",
+          "isTempDeactivated": null,
+          "price": 749,
+          "imageUrl": null,
+          "name": "Mediterranean Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646623",
+          "description": "Made with spinach, tomato, cucumber slices, pepperoncini, Greek olives, beets, chickpeas, Feta cheese and Leo's famous Greek dressing.",
+          "isTempDeactivated": null,
+          "price": 699,
+          "imageUrl": null,
+          "name": "Leo's Spinach Greek Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646638",
+          "description": "Spring mix, dry cherries, Mandarin oranges, walnuts, tomato, cucumber slices, onions, Mozzarella cheese and raspberry vinaigrette dressing.",
+          "isTempDeactivated": null,
+          "price": 699,
+          "imageUrl": null,
+          "name": "Michigan Salad",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390100",
+      "subtitle": "",
+      "title": "Coney Specials",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60644691",
+          "description": "Most popular. Made with chili, mustard and onions in a steamed bun.`",
+          "isTempDeactivated": null,
+          "price": 249,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/4c592b82-6642-48a1-bd5b-e788bd6fb932-retina-large.jpg",
+          "name": "Coney Island",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644702",
+          "description": "Made with chili, mustard and onions in a steamed bun.",
+          "isTempDeactivated": null,
+          "price": 279,
+          "imageUrl": null,
+          "name": "Coney Island with Cheese",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644713",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 199,
+          "imageUrl": null,
+          "name": "Plain Hot Dog",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644722",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 319,
+          "imageUrl": null,
+          "name": "Kosher Coney Island",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644729",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 299,
+          "imageUrl": null,
+          "name": "Plain Kosher Hot Dog",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644734",
+          "description": "Made with tomato, onion, relish and hot peppers.",
+          "isTempDeactivated": null,
+          "price": 249,
+          "imageUrl": null,
+          "name": "Chicago Hot Dog",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644741",
+          "description": "Made with grilled sauerkraut.",
+          "isTempDeactivated": null,
+          "price": 249,
+          "imageUrl": null,
+          "name": "New York Hot Dog",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644751",
+          "description": "Coney-style ground beef with chili, mustard and onions in a steamed bun.",
+          "isTempDeactivated": null,
+          "price": 299,
+          "imageUrl": null,
+          "name": "Loose Hamburger",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644757",
+          "description": "Coney-style ground beef with chili, mustard and onions in a steamed bun.",
+          "isTempDeactivated": null,
+          "price": 329,
+          "imageUrl": null,
+          "name": "Loose Hamburger with Cheese",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644762",
+          "description": "Spiced ground beef covering a Coney dog, topped with chili, mustard and onions in a steamed bun.",
+          "isTempDeactivated": null,
+          "price": 319,
+          "imageUrl": null,
+          "name": "Special Coney",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644767",
+          "description": "Spiced ground beef covering a Coney dog, topped with chili, mustard and onions in a steamed bun.",
+          "isTempDeactivated": null,
+          "price": 349,
+          "imageUrl": null,
+          "name": "Special Coney with Cheese",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60644778",
+          "description": "Served with large pop.",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "2 Coneys & Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645011",
+          "description": "Served with large pop.",
+          "isTempDeactivated": null,
+          "price": 649,
+          "imageUrl": null,
+          "name": "1 Coney & Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645017",
+          "description": "Famous Coney Island, fries and a mini Greek salad.",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "Coney Combo",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645026",
+          "description": "Famous Coney Island, chili fries and a mini Greek salad.",
+          "isTempDeactivated": null,
+          "price": 949,
+          "imageUrl": null,
+          "name": "Coney Combo with Chili Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645032",
+          "description": "Made with spaghetti, topped with chili and Cheddar cheese.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Leo's Super Chili",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645050",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 329,
+          "imageUrl": null,
+          "name": "Chili with Beans",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645234",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 329,
+          "imageUrl": null,
+          "name": "Plain Chili",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645246",
+          "description": "Made with chili, loose hamburger and onions.",
+          "isTempDeactivated": null,
+          "price": 379,
+          "imageUrl": null,
+          "name": "Chili Special",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645256",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 379,
+          "imageUrl": null,
+          "name": "Plain Chili Special",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645275",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Quart of Chili with Beans",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645284",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 859,
+          "imageUrl": null,
+          "name": "Quart of Plain Chili",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390102",
+      "subtitle": "",
+      "title": "Greek Specialties",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60645298",
+          "description": "Greek Kasseri cheese.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Saganaki Opa",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645303",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Chicken Gyro Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645305",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "Chicken Gyro Sandwich with Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645319",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "Chicken Gyro Sandwich with Rice",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645322",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Chicken Gyro Sandwich with Mini Greek Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645328",
+          "description": "Served with mini Greek salad, fries or rice.",
+          "isTempDeactivated": null,
+          "price": 1169,
+          "imageUrl": null,
+          "name": "Chicken Gyro Dinner",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645430",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Gyro Sandwich",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645435",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "Gyro Sandwich with Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645437",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "Gyro Sandwich with Rice",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645439",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Gyro Sandwich with Mini Greek Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645462",
+          "description": "Served with mini Greek salad, fries or rice.",
+          "isTempDeactivated": null,
+          "price": 1169,
+          "imageUrl": null,
+          "name": "Gyro Dinner",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645574",
+          "description": "Made with layers of macaroni, ground beef, eggs, milk and seasonings. Served with rice.",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Pastitsio",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645586",
+          "description": "Made with layers of macaroni, ground beef, eggs, milk and seasonings. Served with rice.",
+          "isTempDeactivated": null,
+          "price": 1199,
+          "imageUrl": null,
+          "name": "Pastitsio with Mini Greek Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645640",
+          "description": "Baked layers of eggplant and ground meat with Parmesan cheese, egg, milk and seasoning. Served with rice.",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Mousaka",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645687",
+          "description": "Baked layers of eggplant and ground meat with Parmesan cheese, egg, milk and seasoning. Served with rice.",
+          "isTempDeactivated": null,
+          "price": 1199,
+          "imageUrl": null,
+          "name": "Mousaka with Mini Greek Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645702",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "Chicken Kebob",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645715",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 929,
+          "imageUrl": null,
+          "name": "Chicken Kebob with Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645727",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 929,
+          "imageUrl": null,
+          "name": "Chicken Kebob with Rice",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645740",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 979,
+          "imageUrl": null,
+          "name": "Chicken Kebob with Mini Greek Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645750",
+          "description": "Served with mini Greek salad, fries or rice.",
+          "isTempDeactivated": null,
+          "price": 1249,
+          "imageUrl": null,
+          "name": "Chicken Kebob Dinner",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645764",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Spinach & Cheese Pie",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645775",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "Spinach & Cheese Pie with Rice",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645783",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 939,
+          "imageUrl": null,
+          "name": "Spinach & Cheese Pie with Mini Greek Salad",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645794",
+          "description": "Served with mini Greek salad, rice and pita.",
+          "isTempDeactivated": null,
+          "price": 1179,
+          "imageUrl": null,
+          "name": "Spinach & Cheese Pie Dinner",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390105",
+      "subtitle": "",
+      "title": "Favorites",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60645807",
+          "description": "Our own hand-dipped cod fillets. Served with French fries and coleslaw.",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "Fish & Chips",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645835",
+          "description": "Served over rice with pita.",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Chicken Stir-Fry",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645839",
+          "description": "Served over rice with pita.",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "Beef Stir-Fry",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645852",
+          "description": "Served over rice with pita.",
+          "isTempDeactivated": null,
+          "price": 719,
+          "imageUrl": null,
+          "name": "Vegetable Stir-Fry",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645873",
+          "description": "Served with fries.",
+          "isTempDeactivated": null,
+          "price": 769,
+          "imageUrl": null,
+          "name": "Shrimp in a Basket",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60645891",
+          "description": "Boneless chicken breast with French fries or rice.",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "Grilled Chicken Breast Dinner",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646045",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 819,
+          "imageUrl": null,
+          "name": "Fried Chicken Dinner with Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646053",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "Spaghetti with Meat Sauce",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646308",
+          "description": "Boneless chicken breast grilled with onion, tomato and green pepper over rice with pita.",
+          "isTempDeactivated": null,
+          "price": 819,
+          "imageUrl": null,
+          "name": "Leo's Chicken & Vegetable Special",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646318",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 749,
+          "imageUrl": null,
+          "name": "Macaroni & Cheese",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646328",
+          "description": "Grilled chicken, spinach, Feta cheese, hummus, avocado and tomato. Served with a side of tzatziki sauce. All wrapped in a warm tortilla.",
+          "isTempDeactivated": null,
+          "price": 849,
+          "imageUrl": null,
+          "name": "Mediterranean Wrap",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646344",
+          "description": "Grilled chicken breast with romaine lettuce, Parmesan cheese and caesar dressing. All wrapped in a warm tortilla.",
+          "isTempDeactivated": null,
+          "price": 699,
+          "imageUrl": null,
+          "name": "Chicken Caesar Wrap",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646350",
+          "description": "Lettuce, tomatoes, Swiss cheese, salami, ham and Italian dressing. All wrapped in a warm tortilla.",
+          "isTempDeactivated": null,
+          "price": 699,
+          "imageUrl": null,
+          "name": "Italian Wrap",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646355",
+          "description": "Tuna, lettuce and tomato. All wrapped in a warm tortilla.",
+          "isTempDeactivated": null,
+          "price": 699,
+          "imageUrl": null,
+          "name": "Tuna Wrap",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390109",
+      "subtitle": "For ten and under.",
+      "title": "Children's Menu",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60646659",
+          "description": "Served with two bacon strips or sausage links.",
+          "isTempDeactivated": null,
+          "price": 579,
+          "imageUrl": null,
+          "name": "Kids French Toast",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646737",
+          "description": "Served with two bacon strips or sausage links.",
+          "isTempDeactivated": null,
+          "price": 579,
+          "imageUrl": null,
+          "name": "Kids Pancakes",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646760",
+          "description": "Served with two bacon strips or sausage links and toast.",
+          "isTempDeactivated": null,
+          "price": 579,
+          "imageUrl": null,
+          "name": "Kids Eggs (2 Pieces)",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646888",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 579,
+          "imageUrl": null,
+          "name": "Kids 1/4 lb. Hamburger & Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646957",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Kids 1/4 Cheeseburger & Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60646987",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "Kids Grilled Cheese & Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647133",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "Kids Hot Dog & Fries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647268",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "Kids Chicken Nuggets & Fries (6 Pieces)",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647364",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Kids Chicken Strips & Fries (3 Pieces)",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647434",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 649,
+          "imageUrl": null,
+          "name": "Kids Fish & Chips (2 Pieces)",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647503",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "Kids Macaroni & Cheese",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390110",
+      "subtitle": "",
+      "title": "Desserts",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "103065884",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 339,
+          "imageUrl": null,
+          "name": "pumpkin pie",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647747",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 199,
+          "imageUrl": null,
+          "name": "Baklava",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647754",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 299,
+          "imageUrl": null,
+          "name": "Pie",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647788",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 399,
+          "imageUrl": null,
+          "name": "Cream Pie",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647829",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 269,
+          "imageUrl": null,
+          "name": "Rice Pudding",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647859",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "Brownie Sundae",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647874",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "Hot Fudge Cream Puff",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60647893",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 389,
+          "imageUrl": null,
+          "name": "Cheesecake",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60648149",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 439,
+          "imageUrl": null,
+          "name": "Cheesecake with Strawberries",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60648167",
+          "description": "Vanilla, chocolate and strawberry ice cream surrounded by a whole banana with chocolate, pineapple and strawberry toppings. Includes whipped cream, nuts and a cherry on top.",
+          "isTempDeactivated": null,
+          "price": 599,
+          "imageUrl": null,
+          "name": "Banana Split",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60648182",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 225,
+          "imageUrl": null,
+          "name": "Ice Cream (1 Scoop)",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60648221",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 325,
+          "imageUrl": null,
+          "name": "Ice Cream (2 Scoops)",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60648288",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 349,
+          "imageUrl": null,
+          "name": "Sundae",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60648647",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 349,
+          "imageUrl": null,
+          "name": "Hot Fudge Sundae",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60648672",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 469,
+          "imageUrl": null,
+          "name": "Carrot Cake",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "7390092",
+      "subtitle": "",
+      "title": "Beverages",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "60619281",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 219,
+          "imageUrl": null,
+          "name": "Coffee",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60619289",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 229,
+          "imageUrl": null,
+          "name": "Tea",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60619302",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 219,
+          "imageUrl": null,
+          "name": "Hot Chocolate",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60619561",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 199,
+          "imageUrl": null,
+          "name": "Juice",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60619763",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 389,
+          "imageUrl": null,
+          "name": "Milkshake - 24 oz.",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60619820",
+          "description": "Most popular.",
+          "isTempDeactivated": null,
+          "price": 189,
+          "imageUrl": null,
+          "name": "Soft Drink",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60620196",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 199,
+          "imageUrl": null,
+          "name": "Milk",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60620564",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 389,
+          "imageUrl": null,
+          "name": "Boston Cooler",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60620570",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 389,
+          "imageUrl": null,
+          "name": "Root Beer Float",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "60620578",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 199,
+          "imageUrl": null,
+          "name": "Lemonade",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "11883918",
+      "subtitle": "",
+      "title": "Family style menu",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "144057530",
+          "description": "10 coneys, 10 chicken fingers, , fries, large greek salad , 5 pitas",
+          "isTempDeactivated": null,
+          "price": 6000,
+          "imageUrl": null,
+          "name": "LEO'S mixed",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103066704",
+          "description": "eggs, sausage, bacon, ham, hash brown, french toast, pancakes",
+          "isTempDeactivated": null,
+          "price": 4000,
+          "imageUrl": null,
+          "name": "BREAKFAST FOR 5 PEOPLE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "144049937",
+          "description": "lamp gyro, chicken gyro, salad , rice, lemon rice soup",
+          "isTempDeactivated": null,
+          "price": 6000,
+          "imageUrl": null,
+          "name": "GREEK DINNER FOR 5 PEOPLE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "144049288",
+          "description": "10 SKEWRS, SALAD, RICE , PITAS, TZATZIKI SAUCE, STEAMED MIX VEGIES",
+          "isTempDeactivated": null,
+          "price": 6000,
+          "imageUrl": null,
+          "name": "KEBABS DINNER FOR 5PEOPLE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "144051111",
+          "description": "20 PC AND FRIES ,RANCH",
+          "isTempDeactivated": null,
+          "price": 3000,
+          "imageUrl": null,
+          "name": "CHICKEN TENDERS(20 pc)",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "144051291",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 1800,
+          "imageUrl": null,
+          "name": "GREEK SALAD TRAY",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "11990634",
+      "subtitle": "",
+      "title": "BREAKFAST",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "146097807",
+          "description": "ONION, CHILI, AM CHEESE ,HASH BROWN, TOAST",
+          "isTempDeactivated": null,
+          "price": 800,
+          "imageUrl": null,
+          "name": "CHILI OMELETTE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "104573126",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 749,
+          "imageUrl": null,
+          "name": "2 eggs 2 pancakes 2 sausage 2 bacon",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "104573117",
+          "description": "bacon or sausage or ham or sausage patty",
+          "isTempDeactivated": null,
+          "price": 729,
+          "imageUrl": null,
+          "name": "2 eggs/hash/meat/toast",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103965575",
+          "description": "SPINACH ,ONION ,TOMATO ,WITH HASH BROWNS AND TOAST",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "SPINACH OMELETTE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103992515",
+          "description": "SPINACH,ONION ,TOMATO .FETA CHS WITH HASH BROWNS AND TOAST",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "SPINACH FETA OMELETTE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103967679",
+          "description": "CHOOSE THE STYLE OF THE EGGS .",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "3 EGGS /HASH BROWNS /3 MEAT/TOAST",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103967386",
+          "description": "PLEASE TELL US HOW YOU WANT THE EGGS",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "2 EGGS/HASH BROWN/TOAST",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103967308",
+          "description": "PLEASE TELL US HOW YOU WANT THE EGGS AND WHAT KIND OF  MEAT : SAUSAGE /HAM/BACON SAUSAGE PATTY",
+          "isTempDeactivated": null,
+          "price": 499,
+          "imageUrl": null,
+          "name": "2 EGGS/MEAT/TOAST",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103966073",
+          "description": "BACON, HAM, ONION, CHEESE WITH HASH BROWNS AND TOAST",
+          "isTempDeactivated": null,
+          "price": 899,
+          "imageUrl": null,
+          "name": "FARMERS OMELETTE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103965704",
+          "description": "ONION,GR PEPPER,MUSHROOM,TOMATO WITH HASH BROWN AND TOAST",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "VEGETARIAN  OMELETTE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103965656",
+          "description": "WITH HASH BROWN AND TOAST",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "SAUSAGE CHS OMELETTE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103965651",
+          "description": "WITH HASH BROWNS AND TOAST",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "BACON CHS OMELETTE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103965464",
+          "description": "WITH HAS BROWNS AND TOAST",
+          "isTempDeactivated": null,
+          "price": 799,
+          "imageUrl": null,
+          "name": "HAM CHS OMELETTE",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    },
+    {
+      "id": "11990709",
+      "subtitle": "",
+      "title": "PANCAKES AND FRENCH TOAST",
+      "__typename": "StoreMenuCategory",
+      "items": [
+        {
+          "id": "103966460",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 579,
+          "imageUrl": null,
+          "name": "PANCAKE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103967021",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "CHOC CHIP WAFFLE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103966946",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "BLUEBERRY WAFFLE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103966916",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "CHOC CHIP PANCAKE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103966846",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "BLUEBERRY PANCAKE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103966824",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "STRAWBERRY PANCAKE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103966633",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 579,
+          "imageUrl": null,
+          "name": "WAFFLE",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103966626",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 679,
+          "imageUrl": null,
+          "name": "CINNAMON SWIRL FRENCH TOAST",
+          "__typename": "StoreMenuListItem"
+        },
+        {
+          "id": "103966622",
+          "description": "",
+          "isTempDeactivated": null,
+          "price": 579,
+          "imageUrl": null,
+          "name": "FRENCH TOAST",
+          "__typename": "StoreMenuListItem"
+        }
+      ]
+    }
+  ]
+}
