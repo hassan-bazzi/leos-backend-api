@@ -1,26 +1,26 @@
-from flywheel import Model, Field, STRING, NUMBER
-import app
+from pynamodb.models import Model
+from pynamodb.attributes import (
+    UnicodeAttribute, NumberAttribute, UnicodeSetAttribute, UTCDateTimeAttribute, ListAttribute, MapAttribute
+)
 
 
 class NextIds(Model):
-    __metadata__ = {
-      '_name': 'next_ids',
-    }
+    class Meta:
+        table_name = 'next_ids'
 
-    table_name = Field(hash_key=True, type=STRING)
-    next_id = Field(type=NUMBER)
+    table_name = UnicodeAttribute(hash_key=True)
+    next_id = NumberAttribute
 
     def get_next_id(table):
-        next_id = app.dynamo.query(NextIds).filter(table_name=table)
-        next_id = next_id.first()
+        next_id = NextIds.get(table)
 
         if not next_id:
-          next_id = NextIds(table_name=table, next_id=1)
-          app.dynamo.save(next_id)
+            next_id = NextIds(table_name=table, next_id=1)
+            next_id.save()
 
-        next_id.incr_(next_id=1)
-        next_id.sync()
+        next_id.update(actions=[
+            NextIds.next_id + 1
+        ])
 
         return next_id.next_id
-
 

@@ -1,12 +1,11 @@
 from flask import Blueprint, request, jsonify, make_response
 from flask_cors import CORS
 from api.models.cart import Cart
-import app
 
-cart = Blueprint('cart', __name__)
-CORS(cart, supports_credentials=True)
+cart_bp = Blueprint('cart', __name__)
+CORS(cart_bp, supports_credentials=True)
 
-@cart.route('/cart', methods=['GET', 'POST'])
+@cart_bp.route('/cart', methods=['GET', 'POST'])
 def cart_controller():
   if request.method == 'GET':
     if not request.cookies.get('cart_id'):
@@ -17,7 +16,7 @@ def cart_controller():
         if not cart:
           cart = Cart.add_new_cart()
 
-    res = jsonify(cart.ddb_dump_())
+    res = jsonify(cart.as_json())
     res.set_cookie('cart_id', f'{cart.id}', max_age=60*60*24*7)
 
     return res
@@ -29,9 +28,10 @@ def cart_controller():
       return '', 400
 
     new_cart = request.json
-    cart.items = new_cart.get('items', [])
-    cart.totalPrice = str(new_cart.get('totalPrice'))
-    app.dynamo.sync(cart)
+    cart.update(actions=[
+      Cart.items.set(new_cart.get('items', [])),
+      Cart.totalPrice.set(str(new_cart.get('totalPrice')))
+    ])
     return jsonify(cart.as_json())
 
 def _normalize_price(price):
