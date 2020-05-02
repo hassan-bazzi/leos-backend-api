@@ -1,9 +1,13 @@
+import os
 from flask import Blueprint, request, jsonify, make_response
 from flask_cors import CORS
-from api.models.cart import Cart
+import stripe
+
+from ..api.models.cart import Cart
 
 cart_bp = Blueprint('cart', __name__)
 CORS(cart_bp, supports_credentials=True)
+
 
 @cart_bp.route('/cart', methods=['GET', 'POST'])
 def cart_controller():
@@ -33,6 +37,30 @@ def cart_controller():
       Cart.totalPrice.set(str(new_cart.get('totalPrice')))
     ])
     return jsonify(cart.as_json())
+
+
+@cart_bp.route('/cart/pay', methods=['POST'])
+def pay():
+  cart_id = request.cookies.get('cart_id')
+  if not cart_id:
+    return 'No cart', 400
+
+  cart = Cart.get_cart(cart_id)
+  stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
+
+  intent = stripe.PaymentIntent.create(
+    amount=int(cart.totalPrice),
+    currency='usd',
+    # Verify your integration in this guide by including this parameter
+    metadata={'integration_check': 'accept_a_payment'},
+  )
+
+  try:
+    # Send publishable key and PaymentIntent details to client
+    return jsonify({'publishableKey': os.getenv('STRIPE_PUBLISHABLE_KEY'), 'clientSecret': intent.client_secret})
+  except Exception as e:
+      return jsonify(error=str(e)), 403
+
 
 def _normalize_price(price):
   if type(price) is int:

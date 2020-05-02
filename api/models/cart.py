@@ -3,20 +3,22 @@ from pynamodb.models import Model
 from pynamodb.attributes import (
     UnicodeAttribute, NumberAttribute, UnicodeSetAttribute, UTCDateTimeAttribute, ListAttribute, MapAttribute
 )
-from api.models.next_ids import NextIds
+from ..models.next_ids import NextIds
 
 
 class ItemMap(MapAttribute):
-    pass
-
+    name = UnicodeAttribute() # "Leo's Famous Greek Salad"
+    options = MapAttribute(attr_name='options') # {Size Choice: ["Medium"], Dressing Substitution: ["Substitute Ranch Dressing"]}
+    price = NumberAttribute() # int
+    quantity = NumberAttribute()
 
 class Cart(Model):
     class Meta:
         table_name = 'cart'
 
     id = NumberAttribute(hash_key=True)
-    items = ListAttribute(of=ItemMap)
-    totalPrice = UnicodeAttribute()
+    items = ListAttribute(of=ItemMap, default=[])
+    totalPrice = UnicodeAttribute(null=True)
 
     def as_json(self):
         return json.loads(json.dumps({

@@ -9,7 +9,7 @@ class NextIds(Model):
         table_name = 'next_ids'
 
     table_name = UnicodeAttribute(hash_key=True)
-    next_id = NumberAttribute
+    next_id = NumberAttribute()
 
     def get_next_id(table):
         next_id = NextIds.get(table)
@@ -19,7 +19,7 @@ class NextIds(Model):
             next_id.save()
 
         next_id.update(actions=[
-            NextIds.next_id + 1
+            NextIds.next_id.set(NextIds.next_id + 1)
         ])
 
         return next_id.next_id
