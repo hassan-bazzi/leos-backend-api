@@ -2,15 +2,17 @@ from pynamodb.models import Model
 from pynamodb.attributes import (
     UnicodeAttribute, NumberAttribute, UnicodeSetAttribute, UTCDateTimeAttribute, ListAttribute, MapAttribute
 )
+from ...lib.config import env
 
 
 class NextIds(Model):
     class Meta:
-        table_name = 'next_ids'
+        table_name = f'{env}-next_ids'
 
     table_name = UnicodeAttribute(hash_key=True)
     next_id = NumberAttribute()
 
+    @staticmethod
     def get_next_id(table):
         next_id = NextIds.get(table)
 

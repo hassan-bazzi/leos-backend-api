@@ -1,10 +1,11 @@
+import logging
 import os
 from flask import Blueprint, request, jsonify, make_response
 from flask_cors import CORS
-import stripe
 
 from ..api.models.cart import Cart
 
+logger = logging.getLogger(__name__)
 cart_bp = Blueprint('cart', __name__)
 CORS(cart_bp, supports_credentials=True)
 
@@ -17,7 +18,7 @@ def cart_controller():
     else:
         cart_id = request.cookies.get('cart_id')
         cart = Cart.get_cart(cart_id)
-        if not cart:
+        if not cart or cart.status == Cart.STATUS_PAID:
           cart = Cart.add_new_cart()
 
     res = jsonify(cart.as_json())
@@ -42,24 +43,44 @@ def cart_controller():
 @cart_bp.route('/cart/pay', methods=['POST'])
 def pay():
   cart_id = request.cookies.get('cart_id')
+  payment_method_id = request.json.get('payment_method_id')
+  logger.debug(str(request.json))
+  billing_details = {
+    "name": f"{request.json.get('first_name')} {request.json.get('last_name')}",
+    "email": request.json.get('email'),
+    "phone": request.json.get('phone'),
+    "address": {
+      "line1": request.json.get("street_address"),
+      "city": request.json.get('city'),
+      "state": request.json.get('state'),
+      "postal_code": request.json.get('zip'),
+    }
+  }
+
   if not cart_id:
     return 'No cart', 400
 
+  if not payment_method_id:
+    return 'Invalid payment method', 400
+
   cart = Cart.get_cart(cart_id)
-  stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
 
-  intent = stripe.PaymentIntent.create(
-    amount=int(cart.totalPrice),
-    currency='usd',
-    # Verify your integration in this guide by including this parameter
-    metadata={'integration_check': 'accept_a_payment'},
-  )
+  payment = cart.capture_payment(payment_method_id, billing_details)
 
-  try:
-    # Send publishable key and PaymentIntent details to client
-    return jsonify({'publishableKey': os.getenv('STRIPE_PUBLISHABLE_KEY'), 'clientSecret': intent.client_secret})
-  except Exception as e:
-      return jsonify(error=str(e)), 403
+  if payment:
+    # Handle post-payment fulfillment
+    res = jsonify({'success': True})
+    # Remove cookie so they can get a new cart
+    res.set_cookie('cart_id', '', max_age=60*60*24*7)
+    return res
+  else:
+    # Any other status would be unexpected, so error
+    return jsonify({'error': 'Invalid PaymentIntent status'}), 500
+
+
+@cart_bp.route('/cart/stripe-keys', methods=['GET'])
+def stripe_keys():
+  return jsonify({'publishableKey': os.getenv('STRIPE_PUBLISHABLE_KEY')})
 
 
 def _normalize_price(price):

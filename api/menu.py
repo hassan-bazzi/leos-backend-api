@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify
 from flask_cors import CORS
-from ..api.services.menu_service import get_menu_dict, get_item_dict
+from ..api.services.menu import get_menu_dict, get_item_dict
 
 menu_bp = Blueprint('menu', __name__)
 CORS(menu_bp, supports_credentials=True)
