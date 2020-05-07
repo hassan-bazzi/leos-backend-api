@@ -2,7 +2,7 @@ from pynamodb.models import Model
 from pynamodb.attributes import (
     UnicodeAttribute, NumberAttribute, UnicodeSetAttribute, UTCDateTimeAttribute, ListAttribute, MapAttribute
 )
-from ...lib.config import env
+from ..lib.config import env
 
 
 class NextIds(Model):

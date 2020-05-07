@@ -77,11 +77,32 @@ def pay():
     # Any other status would be unexpected, so error
     return jsonify({'error': 'Invalid PaymentIntent status'}), 500
 
+@cart_bp.route('/cart/clear', methods=['GET'])
+def clear_cart():
+    res = jsonify({})
+    res.set_cookie('cart_id', '', max_age=60*60*24*7)
+    return res
 
 @cart_bp.route('/cart/stripe-keys', methods=['GET'])
 def stripe_keys():
   return jsonify({'publishableKey': os.getenv('STRIPE_PUBLISHABLE_KEY')})
 
+@cart_bp.route('/cart/stripe-hook', methods=['POST'])
+def stripe_hook():
+  data = request.json.get('data')
+  logger.info('stripe hook initiated')
+  logger.info(f'stripe data: {str(data)}')
+
+  transaction_id = data.get('object', {}).get('id')
+  transaction_id =  'pi_1Gevu4IYFNyZvHf3wEXlePaj'
+
+  if not transaction_id:
+    return
+
+  cart = Cart.get_by_transactionid(transaction_id)
+  cart.send_order_confirmations()
+
+  return ''
 
 def _normalize_price(price):
   if type(price) is int:
