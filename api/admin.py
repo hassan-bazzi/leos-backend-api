@@ -3,7 +3,7 @@ import os
 from flask import Blueprint, request, jsonify, make_response
 from flask_cors import CORS
 
-from ..api.models.cart import Cart
+from api.models.cart import Cart
 
 logger = logging.getLogger(__name__)
 admin_bp = Blueprint('admin', __name__)
