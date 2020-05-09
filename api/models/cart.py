@@ -134,7 +134,7 @@ class Cart(Model):
                 f'{item.quantity} - {item.name} - ' + \
                 "${:0.2f}".format(item.price / 100) + \
                 "\n"
-            for option in self.items.options:
+            for option in item.options:
                 items_list += f"    {option}: {item.options[option]} \n"
 
             if item.notes:
