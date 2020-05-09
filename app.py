@@ -10,6 +10,10 @@ from api.models.next_ids import NextIds
 def create_app():
   app = Flask(__name__)
 
+  stream_handler = logging.StreamHandler()
+  stream_handler.setLevel(logging.INFO)
+  app.logger.addHandler(stream_handler)
+
   CORS(app, supports_credentials=True)
   app.register_blueprint(menu_bp)
   app.register_blueprint(cart_bp)
