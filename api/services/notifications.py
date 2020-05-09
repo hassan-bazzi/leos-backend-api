@@ -10,7 +10,7 @@ def send_email(subject, message, recipient):
     client = boto3.client('ses', region_name='us-east-1')
 
     return client.send_email(
-        Source="Leo's Commerce NOREPLY <mail@leoscommerce.com>",
+        Source="Leo's Coney Island <mail@leoscommerce.com>",
         Destination={
             'ToAddresses': [
                 recipient

@@ -124,9 +124,11 @@ class Cart(Model):
             send_text(self.generate_receipt(), self.billingDetails.phone)
         except:
             logger.error(f'could not send text for {self.billingDetails.phone} {self.id}')
+
         send_email(
             f"Leo's Coney Island Order Confirmation (Order #{self.id})",
-            self.generate_receipt(),
+            "Thank you for your order! We're making your food now, please call us if you have any questions. \n"
+            + self.generate_receipt(),
             self.billingDetails.email
         )
 
