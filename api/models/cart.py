@@ -120,7 +120,10 @@ class Cart(Model):
         return self
 
     def send_order_confirmations(self):
-        send_text(self.generate_receipt(), self.billingDetails.phone)
+        try:
+            send_text(self.generate_receipt(), self.billingDetails.phone)
+        except:
+            log.error(f'could not send text for {self.billingDetails.phone} {self.id}')
         send_email(
             f"Leo's Coney Island Order Confirmation (Order #{self.id})",
             self.generate_receipt(),
