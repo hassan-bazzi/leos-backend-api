@@ -7,6 +7,8 @@ from api.cart import cart_bp
 from api.models.cart import Cart
 from api.models.next_ids import NextIds
 
+logging.basicConfig(filename='/log/backend.log',level=logging.DEBUG)
+
 def create_app():
   app = Flask(__name__)
 

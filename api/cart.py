@@ -13,6 +13,7 @@ CORS(cart_bp, supports_credentials=True)
 @cart_bp.route('/cart', methods=['GET', 'POST'])
 def cart_controller():
     if request.method == 'GET':
+        logger.info('new cart request')
         if not request.cookies.get('cart_id'):
             cart = Cart.add_new_cart()
         else:
