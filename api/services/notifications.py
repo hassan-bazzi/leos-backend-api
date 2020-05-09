@@ -2,7 +2,7 @@ import boto3
 from twilio.rest import Client
 import logging
 import os
-
+from ..lib.config import env
 logger = logging.getLogger(__name__)
 
 
@@ -22,6 +22,32 @@ def send_email(subject, message, recipient):
             },
             'Body': {
                 'Text': {
+                    'Data': message
+                },
+            }
+        }
+    )
+
+
+def send_html_email(subject, message, recipient):
+    client = boto3.client('ses', region_name='us-east-1')
+
+    if env != 'prod':
+      subject = f'TEST EMAIL: {subject}'
+
+    return client.send_email(
+        Source="Leo's Coney Island <mail@leoscommerce.com>",
+        Destination={
+            'ToAddresses': [
+                recipient
+            ]
+        },
+        Message={
+            'Subject': {
+                'Data': subject
+            },
+            'Body': {
+                'Html': {
                     'Data': message
                 },
             }

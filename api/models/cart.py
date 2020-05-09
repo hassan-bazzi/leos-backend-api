@@ -8,10 +8,10 @@ from pynamodb.indexes import GlobalSecondaryIndex, AllProjection
 from pynamodb.attributes import (
     UnicodeAttribute, NumberAttribute, UnicodeSetAttribute, UTCDateTimeAttribute, ListAttribute, MapAttribute
 )
-from ..services.notifications import send_text, send_email
+from ..services.notifications import send_text, send_email, send_html_email
 from .model import Model
 from ..models.next_ids import NextIds
-from ..lib.config import env
+from ..lib.config import env, order_recipients
 
 logger = logging.getLogger(__name__)
 
@@ -73,9 +73,9 @@ class Cart(Model):
 
     def as_json(self):
         return json.loads(json.dumps({
-          "id": self.id,
-          "items": [item.as_dict() for item in self.items if self.items],
-          "totalPrice": self.totalPrice
+            "id": self.id,
+            "items": [item.as_dict() for item in self.items if self.items],
+            "totalPrice": self.totalPrice
         }))
 
     def add_tax(self):
@@ -123,7 +123,8 @@ class Cart(Model):
         try:
             send_text(self.generate_receipt(), self.billingDetails.phone)
         except:
-            logger.error(f'could not send text for {self.billingDetails.phone} {self.id}')
+            logger.error(
+                f'could not send text for {self.billingDetails.phone} {self.id}')
 
         send_email(
             f"Leo's Coney Island Order Confirmation (Order #{self.id})",
@@ -131,6 +132,12 @@ class Cart(Model):
             + self.generate_receipt(),
             self.billingDetails.email
         )
+        for email in order_recipients:
+            send_html_email(
+                f"Leo's Coney Island Order Confirmation (Order #{self.id})",
+                self.generate_html_receipt(),
+                email
+            )
 
     def generate_receipt(self):
         items_list = ''
@@ -146,7 +153,8 @@ class Cart(Model):
             if item.notes:
                 items_list += f"    Notes: {item.notes} \n"
 
-        items_list += "\nTotal Price: ${:0.2f}".format(int(self.totalPrice) / 100)
+        items_list += "\nTotal Price: ${:0.2f}".format(
+            int(self.totalPrice) / 100)
         return f"""-------------------------
 Order # {self.id}
 -------------------------
@@ -157,6 +165,32 @@ We have received your payment. Please pick up your order in 20-30 minutes.
 Leo's Coney Island
 4895 Carroll Lake Rd, Commerce Charter Twp, MI 48382
 (248) 366-8360
+"""
+
+    def generate_html_receipt(self):
+        items_list = '<ul>'
+        for item in self.items:
+            items_list += \
+                f'<li><h5>{item.quantity} - {item.name} - ' + \
+                "${:0.2f}".format(item.price / 100) + \
+                "</h5>\n"
+            if item.options:
+                for option in item.options:
+                    items_list += f"<b>    {option}: {item.options[option]} </b>\n"
+
+            if item.notes:
+                items_list += f"<b>    Notes: {item.notes} </b>\n"
+
+            items_list += '</li>'
+        items_list += "</ul>"
+        items_list += "\nTotal Price: <b>${:0.2f}</b>".format(
+            int(self.totalPrice) / 100)
+        return f"""<html>-------------------------
+<h3>Order # {self.id}</h3>
+-------------------------
+{items_list}
+-------------------------
+</html>
 """
 
     @staticmethod
@@ -195,7 +229,8 @@ Leo's Coney Island
             if isinstance(self.attribute_values[key], MapAttribute):
                 cart[key] = self.attribute_values[key].as_dict()
             elif isinstance(self.attribute_values[key], list):
-                cart[key] = [item.as_dict() for item in self.attribute_values[key]]
+                cart[key] = [item.as_dict()
+                             for item in self.attribute_values[key]]
             elif isinstance(self.attribute_values[key], datetime):
                 cart[key] = self.attribute_values[key]. \
                     astimezone(pytz.timezone('US/Eastern')) \
