@@ -20,6 +20,7 @@ class ItemMap(MapAttribute):
     name = UnicodeAttribute()  # "Leo's Famous Greek Salad"
     # {Size Choice: ["Medium"], Dressing Substitution: ["Substitute Ranch Dressing"]}
     options = MapAttribute(attr_name='options')
+    notes = UnicodeAttribute()  # Extra toasted bun
     price = NumberAttribute()  # int
     quantity = NumberAttribute()
 
@@ -121,7 +122,7 @@ class Cart(Model):
     def send_order_confirmations(self):
         send_text(self.generate_receipt(), self.billingDetails.phone)
         send_email(
-            f"Leo's Coney Island Order #{self.id}",
+            f"Leo's Coney Island Order Confirmation (Order #{self.id})",
             self.generate_receipt(),
             self.billingDetails.email
         )
