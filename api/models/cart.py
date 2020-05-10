@@ -171,19 +171,19 @@ Leo's Coney Island
         items_list = '<ul>'
         for item in self.items:
             items_list += \
-                f'<li><h3>{item.quantity} - {item.name} - ' + \
+                f'<li><h2>{item.quantity} - {item.name} - ' + \
                 "${:0.2f}".format(item.price / 100) + \
-                "</h3>\n"
+                "</h2>\n"
             if item.options:
                 for option in item.options:
-                    items_list += f"<b styl='padding-left: 10px'>{option}: {item.options[option]} </b><br />"
+                    items_list += f"<h3 styl='padding-left: 100px'>{option}: {item.options[option]} </h3><br />"
 
             if item.notes:
-                items_list += f"<b>    Notes: {item.notes} </b><br />"
+                items_list += f"<h3>    Notes: {item.notes} </h3><br />"
 
             items_list += '</li>'
         items_list += "</ul>"
-        items_list += "<br />Total Price: <b>${:0.2f}</b>".format(
+        items_list += "<br />Total Price: <b>${:0.2f}</b><br />".format(
             int(self.totalPrice) / 100)
         return f"""<html>-------------------------<br />
 <h3>Order # {self.id}</h3>
