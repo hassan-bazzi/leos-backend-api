@@ -8,5 +8,19 @@
     {
       "ContainerPort": "8000"
     }
+  ],
+  "volumes": [
+    {
+      "name": "log",
+      "host": {
+        "sourcePath": "/log"
+      }
+    }
+  ],
+  "mountPoints": [
+    {
+      "sourceVolume": "log",
+      "containerPath": "/log"
+    }
   ]
 }
