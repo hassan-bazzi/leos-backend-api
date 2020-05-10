@@ -168,28 +168,26 @@ Leo's Coney Island
 """
 
     def generate_html_receipt(self):
-        items_list = '<ul>'
+        items_list = ''
         for item in self.items:
             items_list += \
-                f'<li><h2>{item.quantity} - {item.name} - ' + \
+                f'<h2>{item.quantity} - {item.name} - ' + \
                 "${:0.2f}".format(item.price / 100) + \
-                "</h2>\n"
+                "</h2><ul>"
             if item.options:
                 for option in item.options:
-                    items_list += f"<h3 styl='padding-left: 100px'>{option}: {item.options[option]} </h3><br />"
+                    items_list += f"<li style='padding-left: 100px'><h3>{option}: {item.options[option]} </h3></li>"
 
             if item.notes:
-                items_list += f"<h3>    Notes: {item.notes} </h3><br />"
+                items_list += f"<li style='padding-left: 100px'><h3>Notes: {item.notes} </h3></li>"
 
-            items_list += '</li>'
-        items_list += "</ul>"
+            items_list += '</ul>'
         items_list += "<br />Total Price: <b>${:0.2f}</b><br />".format(
             int(self.totalPrice) / 100)
         return f"""<html>-------------------------<br />
 <h3>Order # {self.id}</h3>
 -------------------------<br />
 {items_list}
--------------------------<br />
 </html>
 """
 
