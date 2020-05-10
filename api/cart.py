@@ -57,6 +57,13 @@ def pay():
             "postal_code": request.json.get('zip'),
         }
     }
+    if request.json.get('tip'):
+      try:
+        tip = int(float(request.json.get('tip')) * 100)
+        billing_details['tip'] = str(tip)
+      except:
+        logger.error(f'error converting tip: {request.json.get("tip")}')
+        pass
 
     if not cart_id:
         return 'No cart', 400

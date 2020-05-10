@@ -30,6 +30,7 @@ class BillingDetailsMap(MapAttribute):
     address = MapAttribute(attr_name='address', null=True)
     email = UnicodeAttribute(null=True)
     phone = UnicodeAttribute(null=True)
+    tip = UnicodeAttribute(null=True)
 
 
 class TransactionIdIndex(GlobalSecondaryIndex):
@@ -89,11 +90,26 @@ class Cart(Model):
             )
         ])
 
+    def add_tip(self, tip):
+        self.update(actions=[
+            Cart.totalPrice.set(
+                str(
+                    int(float(
+                        int(self.totalPrice) + int(tip)))
+                )
+            )
+        ])
+
+
     def capture_payment(self, payment_method_id, billing_details):
         self.update(actions=[
             Cart.billingDetails.set(billing_details)
         ])
         self.add_tax()
+
+        if billing_details.get('tip'):
+            self.add_tip(billing_details.get('tip'))
+
         logger.info(f'Charging {self.totalPrice} for cart #{self.id}')
         stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
         try:
@@ -148,7 +164,7 @@ class Cart(Model):
                 "\n"
             if item.options:
                 for option in item.options:
-                    items_list += f"    {option}: {item.options[option]} \n"
+                    items_list += f"    {option}: {str(item.options[option]).strip('[]')} \n"
 
             if item.notes:
                 items_list += f"    Notes: {item.notes} \n"
@@ -176,7 +192,7 @@ Leo's Coney Island
                 "</h2><ul>"
             if item.options:
                 for option in item.options:
-                    items_list += f"<li style='margin-left: 25px'><h3>{option}: {item.options[option]} </h3></li>"
+                    items_list += f"<li style='margin-left: 25px'><h3>{option}: {str(item.options[option]).strip('[]')} </h3></li>"
 
             if item.notes:
                 items_list += f"<li style='margin-left: 25px'><h3>Notes: {item.notes} </h3></li>"
