@@ -176,10 +176,10 @@ Leo's Coney Island
                 "</h2><ul>"
             if item.options:
                 for option in item.options:
-                    items_list += f"<li style='margin-left: 50px'><h3>{option}: {item.options[option]} </h3></li>"
+                    items_list += f"<li style='margin-left: 25px'><h3>{option}: {item.options[option]} </h3></li>"
 
             if item.notes:
-                items_list += f"<li style='margin-left: 50px'><h3>Notes: {item.notes} </h3></li>"
+                items_list += f"<li style='margin-left: 25px'><h3>Notes: {item.notes} </h3></li>"
 
             items_list += '</ul>'
         items_list += "<br />Total Price: <b>${:0.2f}</b><br />".format(
