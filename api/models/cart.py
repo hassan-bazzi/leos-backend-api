@@ -11,7 +11,7 @@ from pynamodb.attributes import (
 from ..services.notifications import send_text, send_email, send_html_email
 from .model import Model
 from ..models.next_ids import NextIds
-from ..lib.config import env, order_recipients
+from ..lib.config import env, order_recipients, order_sms_recipients
 
 logger = logging.getLogger(__name__)
 
@@ -154,6 +154,8 @@ class Cart(Model):
                 self.generate_html_receipt(),
                 email
             )
+        for phone in order_sms_recipients:
+            send_text(self.generate_receipt(), phone)
 
     def generate_receipt(self):
         items_list = ''
@@ -187,21 +189,21 @@ Leo's Coney Island
         items_list = ''
         for item in self.items:
             items_list += \
-                f'<h2>{item.quantity} - {item.name} - ' + \
+                f'<h4>{item.quantity} - {item.name} - ' + \
                 "${:0.2f}".format(item.price / 100) + \
-                "</h2><ul>"
+                "</h4><ul>"
             if item.options:
                 for option in item.options:
-                    items_list += f"<li style='margin-left: 25px'><h3>{option}: {str(item.options[option]).strip('[]')} </h3></li>"
+                    items_list += f"<li style='margin-left: 25px'><h5>{option}: {str(item.options[option]).strip('[]')} </h5></li>"
 
             if item.notes:
-                items_list += f"<li style='margin-left: 25px'><h3>Notes: {item.notes} </h3></li>"
+                items_list += f"<li style='margin-left: 25px'><h5>Notes: {item.notes} </h5></li>"
 
             items_list += '</ul>'
         items_list += "<br />Total Price: <b>${:0.2f}</b><br />".format(
             int(self.totalPrice) / 100)
         return f"""<html>-------------------------<br />
-<h3>Order # {self.id}</h3>
+<h5>Order # {self.id}</h5>
 -------------------------<br />
 {items_list}
 </html>
