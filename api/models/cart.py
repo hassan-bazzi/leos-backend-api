@@ -178,7 +178,7 @@ Order # {self.id}
 -------------------------
 {items_list}
 -------------------------
-We have received your payment. Please pick up your order in 20-30 minutes.
+We have received your payment. Your order will be ready for pickup in 15-20 minutes.
 
 Leo's Coney Island
 4895 Carroll Lake Rd, Commerce Charter Twp, MI 48382
