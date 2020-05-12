@@ -204,6 +204,7 @@ Leo's Coney Island
             int(self.totalPrice) / 100)
         return f"""<html>-------------------------<br />
 <h5>Order # {self.id}</h5>
+<h5>{self.billingDetails.name}</h5>
 -------------------------<br />
 {items_list}
 </html>
