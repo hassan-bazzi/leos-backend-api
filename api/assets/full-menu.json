@@ -44,11 +44,11 @@
         },
         {
           "id": "142131809",
-          "description": "lettuce ,tomato ,swiss and american ,ranch",
+          "description": "Lettuce, tomato, swiss and american cheese, ranch",
           "isTempDeactivated": null,
           "price": 649,
           "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=400,height=224,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/6821daa7-4b9e-41e6-b22b-8d92b88efb79-retina-large-jpeg",
-          "name": "Grilled chicken finger pita",
+          "name": "Grilled Chicken Finger Pita",
           "__typename": "StoreMenuListItem"
         }
       ]
@@ -885,11 +885,11 @@
       "items": [
         {
           "id": "142131809",
-          "description": "lettuce ,tomato ,swiss and american ,ranch",
+          "description": "Lettuce, tomato, swiss and american cheese, ranch",
           "isTempDeactivated": null,
           "price": 649,
           "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/6821daa7-4b9e-41e6-b22b-8d92b88efb79-retina-large-jpeg",
-          "name": "Grilled chicken finger pita",
+          "name": "Grilled Chicken Finger Pita",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2208,47 +2208,47 @@
       "items": [
         {
           "id": "144057530",
-          "description": "10 coneys, 10 chicken fingers, , fries, large greek salad , 5 pitas",
+          "description": "10 coneys, 10 chicken fingers, fries, large Greek salad, 5 pitas",
           "isTempDeactivated": null,
           "price": 6000,
           "imageUrl": null,
-          "name": "LEO'S mixed",
+          "name": "Leo's Mix Family Combo",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103066704",
-          "description": "eggs, sausage, bacon, ham, hash brown, french toast, pancakes",
+          "description": "Eggs, sausage, bacon, ham, hash browns, french toast, pancakes",
           "isTempDeactivated": null,
           "price": 4000,
           "imageUrl": null,
-          "name": "BREAKFAST FOR 5 PEOPLE",
+          "name": "Breakfast for 5 People",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "144049937",
-          "description": "lamp gyro, chicken gyro, salad , rice, lemon rice soup",
+          "description": "Lamb gyro, Chicken gyro, Greek salad, rice, lemon rice soup",
           "isTempDeactivated": null,
           "price": 6000,
           "imageUrl": null,
-          "name": "GREEK DINNER FOR 5 PEOPLE",
+          "name": "Greek Dinner for 5 People",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "144049288",
-          "description": "10 SKEWRS, SALAD, RICE , PITAS, TZATZIKI SAUCE, STEAMED MIX VEGIES",
+          "description": "10 skewers, salad, rice, 10 pitas, tzatsiki sauce, steamed mixed vegetables",
           "isTempDeactivated": null,
           "price": 6000,
           "imageUrl": null,
-          "name": "KEBABS DINNER FOR 5PEOPLE",
+          "name": "Kebab Dinner for 5 People",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "144051111",
-          "description": "20 PC AND FRIES ,RANCH",
+          "description": "20 piece chicken tenders with fries",
           "isTempDeactivated": null,
           "price": 3000,
           "imageUrl": null,
-          "name": "CHICKEN TENDERS(20 pc)",
+          "name": "20 Piece Chicken Tender w/ Fries",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2257,7 +2257,7 @@
           "isTempDeactivated": null,
           "price": 1800,
           "imageUrl": null,
-          "name": "GREEK SALAD TRAY",
+          "name": "Greek Salad Tray",
           "__typename": "StoreMenuListItem"
         }
       ]
@@ -2265,16 +2265,16 @@
     {
       "id": "11990634",
       "subtitle": "",
-      "title": "BREAKFAST",
+      "title": "Breakfast",
       "__typename": "StoreMenuCategory",
       "items": [
         {
           "id": "146097807",
-          "description": "ONION, CHILI, AM CHEESE ,HASH BROWN, TOAST",
+          "description": "Onion, chili, american cheese, hash browns, toast",
           "isTempDeactivated": null,
           "price": 800,
           "imageUrl": null,
-          "name": "CHILI OMELETTE",
+          "name": "Chili Omelette",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2283,106 +2283,106 @@
           "isTempDeactivated": null,
           "price": 749,
           "imageUrl": null,
-          "name": "2 eggs 2 pancakes 2 sausage 2 bacon",
+          "name": "2 Eggs, 2 Pancakes, 2 Sausage, 2 Bacon",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "104573117",
-          "description": "bacon or sausage or ham or sausage patty",
+          "description": "Bacon or sausage or ham or sausage oatty",
           "isTempDeactivated": null,
           "price": 729,
           "imageUrl": null,
-          "name": "2 eggs/hash/meat/toast",
+          "name": "2 Eggs / Hash browns / Choice of Meat / Toast",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103965575",
-          "description": "SPINACH ,ONION ,TOMATO ,WITH HASH BROWNS AND TOAST",
+          "description": "Spinach, onion, tomato, with hash browns and toast",
           "isTempDeactivated": null,
           "price": 799,
           "imageUrl": null,
-          "name": "SPINACH OMELETTE",
+          "name": "Spinach Omelette",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103992515",
-          "description": "SPINACH,ONION ,TOMATO .FETA CHS WITH HASH BROWNS AND TOAST",
+          "description": "Spinach, onion, tomato, and feta cheese with hash browns and toast",
           "isTempDeactivated": null,
           "price": 899,
           "imageUrl": null,
-          "name": "SPINACH FETA OMELETTE",
+          "name": "Spinach Feta Omelette",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103967679",
-          "description": "CHOOSE THE STYLE OF THE EGGS .",
+          "description": "Please tell us how you want the eggs",
           "isTempDeactivated": null,
           "price": 799,
           "imageUrl": null,
-          "name": "3 EGGS /HASH BROWNS /3 MEAT/TOAST",
+          "name": "3 Eggs / Hash browns / 3 Meat / Toast",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103967386",
-          "description": "PLEASE TELL US HOW YOU WANT THE EGGS",
+          "description": "Please tell us how you want the eggs",
           "isTempDeactivated": null,
           "price": 499,
           "imageUrl": null,
-          "name": "2 EGGS/HASH BROWN/TOAST",
+          "name": "2 Eggs / Hash browns / Toast",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103967308",
-          "description": "PLEASE TELL US HOW YOU WANT THE EGGS AND WHAT KIND OF  MEAT : SAUSAGE /HAM/BACON SAUSAGE PATTY",
+          "description": "Please tell us how you want the eggs and what kind of meat: Sausage / Ham / Bacon / Sausage patty",
           "isTempDeactivated": null,
           "price": 499,
           "imageUrl": null,
-          "name": "2 EGGS/MEAT/TOAST",
+          "name": "2 Eggs / Meat / Toast",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103966073",
-          "description": "BACON, HAM, ONION, CHEESE WITH HASH BROWNS AND TOAST",
+          "description": "Bacon, ham, onion, cheese with hash browns and toast",
           "isTempDeactivated": null,
           "price": 899,
           "imageUrl": null,
-          "name": "FARMERS OMELETTE",
+          "name": "Farmers Omelette",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103965704",
-          "description": "ONION,GR PEPPER,MUSHROOM,TOMATO WITH HASH BROWN AND TOAST",
+          "description": "Onion, green pepper, mushroom, tomato with hash browns and toast",
           "isTempDeactivated": null,
           "price": 799,
           "imageUrl": null,
-          "name": "VEGETARIAN  OMELETTE",
+          "name": "Vegetarian Omelette",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103965656",
-          "description": "WITH HASH BROWN AND TOAST",
+          "description": "With hash browns and toast",
           "isTempDeactivated": null,
           "price": 799,
           "imageUrl": null,
-          "name": "SAUSAGE CHS OMELETTE",
+          "name": "Sausage Cheese Omelette",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103965651",
-          "description": "WITH HASH BROWNS AND TOAST",
+          "description": "With hash browns and toast",
           "isTempDeactivated": null,
           "price": 799,
           "imageUrl": null,
-          "name": "BACON CHS OMELETTE",
+          "name": "Bacon and Cheese Omelette",
           "__typename": "StoreMenuListItem"
         },
         {
           "id": "103965464",
-          "description": "WITH HAS BROWNS AND TOAST",
+          "description": "With hash browns and toast",
           "isTempDeactivated": null,
           "price": 799,
           "imageUrl": null,
-          "name": "HAM CHS OMELETTE",
+          "name": "Ham and Cheese Omelette",
           "__typename": "StoreMenuListItem"
         }
       ]
@@ -2390,7 +2390,7 @@
     {
       "id": "11990709",
       "subtitle": "",
-      "title": "PANCAKES AND FRENCH TOAST",
+      "title": "Pancakes and French Toast",
       "__typename": "StoreMenuCategory",
       "items": [
         {
@@ -2399,7 +2399,7 @@
           "isTempDeactivated": null,
           "price": 579,
           "imageUrl": null,
-          "name": "PANCAKE",
+          "name": "Pancake",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2408,7 +2408,7 @@
           "isTempDeactivated": null,
           "price": 679,
           "imageUrl": null,
-          "name": "CHOC CHIP WAFFLE",
+          "name": "Choc Chip Waffle",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2417,7 +2417,7 @@
           "isTempDeactivated": null,
           "price": 679,
           "imageUrl": null,
-          "name": "BLUEBERRY WAFFLE",
+          "name": "Blueberry Waffle",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2426,7 +2426,7 @@
           "isTempDeactivated": null,
           "price": 679,
           "imageUrl": null,
-          "name": "CHOC CHIP PANCAKE",
+          "name": "Choc Chip Pancake",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2435,7 +2435,7 @@
           "isTempDeactivated": null,
           "price": 679,
           "imageUrl": null,
-          "name": "BLUEBERRY PANCAKE",
+          "name": "Blueberry Pancake",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2444,7 +2444,7 @@
           "isTempDeactivated": null,
           "price": 679,
           "imageUrl": null,
-          "name": "STRAWBERRY PANCAKE",
+          "name": "Strawberry Pancake",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2453,7 +2453,7 @@
           "isTempDeactivated": null,
           "price": 579,
           "imageUrl": null,
-          "name": "WAFFLE",
+          "name": "Waffle",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2462,7 +2462,7 @@
           "isTempDeactivated": null,
           "price": 679,
           "imageUrl": null,
-          "name": "CINNAMON SWIRL FRENCH TOAST",
+          "name": "Cinnamon Swirl French Toast",
           "__typename": "StoreMenuListItem"
         },
         {
@@ -2471,7 +2471,7 @@
           "isTempDeactivated": null,
           "price": 579,
           "imageUrl": null,
-          "name": "FRENCH TOAST",
+          "name": "French Toast",
           "__typename": "StoreMenuListItem"
         }
       ]
