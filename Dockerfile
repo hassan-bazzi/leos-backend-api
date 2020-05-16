@@ -1,5 +1,8 @@
 FROM python:3.7.3
 
+RUN apt update
+RUN apt install vim less -y
+
 COPY . /app
 
 WORKDIR /app

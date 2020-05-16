@@ -62,10 +62,7 @@ def send_text(message, recipient):
     phone = '+1' + recipient.replace('-', '').replace('_', '').strip()
     logger.info('sending twilio SMS to: ' + phone)
 
-    print(phone)
-
     client = Client(account_sid, auth_token)
-
     message = client.messages \
                     .create(
                         body=message,

@@ -67,6 +67,7 @@ class Cart(Model):
     items = ListAttribute(of=ItemMap, default=[])
     totalPrice = UnicodeAttribute(default='0')
     billingDetails = BillingDetailsMap(null=True)
+    pickupTime = UnicodeAttribute(default='ASAP (15-20 minutes)')
     status = UnicodeAttribute(default=STATUS_NEW)
     statusIndex = StatusIndex()
     transactionId = UnicodeAttribute(null=True)
@@ -101,10 +102,12 @@ class Cart(Model):
         ])
 
 
-    def capture_payment(self, payment_method_id, billing_details):
+    def capture_payment(self, payment_method_id, billing_details, pickup_time):
         self.update(actions=[
-            Cart.billingDetails.set(billing_details)
+            Cart.billingDetails.set(billing_details),
+            Cart.pickupTime.set(pickup_time)
         ])
+
         self.add_tax()
 
         if billing_details.get('tip'):
@@ -119,8 +122,8 @@ class Cart(Model):
                 payment_method=payment_method_id,
                 confirm=True,
             )
-            logger.error(str(intent))
-            print(str(intent))
+            logger.error(str(self.pickupTime))
+            print(str(self.pickupTime))
         except stripe.error.CardError:
             self.update(actions=[
                 Cart.status.set(Cart.STATUS_PAYMENT_FAILED)
@@ -175,10 +178,11 @@ class Cart(Model):
             int(self.totalPrice) / 100)
         return f"""-------------------------
 Order # {self.id}
+Pickup Time: {self.pickupTime}
 -------------------------
 {items_list}
 -------------------------
-We have received your payment. Your order will be ready for pickup in 15-20 minutes.
+We have received your payment. Your order will be ready for pickup at your selected pickup time.
 
 Leo's Coney Island
 4895 Carroll Lake Rd, Commerce Charter Twp, MI 48382
@@ -205,6 +209,7 @@ Leo's Coney Island
         return f"""<html>-------------------------<br />
 <h5>Order # {self.id}</h5>
 <h5>{self.billingDetails.name}</h5>
+<h5>Pickup Time: {self.pickupTime}</h5>
 -------------------------<br />
 {items_list}
 </html>

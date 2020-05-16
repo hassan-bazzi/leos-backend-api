@@ -45,7 +45,7 @@ def cart_controller():
 def pay():
     cart_id = request.cookies.get('cart_id')
     payment_method_id = request.json.get('payment_method_id')
-    logger.debug(str(request.json))
+    pickup_time = request.json.get('pickup_time', 'ASAP (15-20 minutes)')
     billing_details = {
         "name": f"{request.json.get('first_name')} {request.json.get('last_name')}",
         "email": request.json.get('email'),
@@ -73,7 +73,7 @@ def pay():
 
     cart = Cart.get_cart(cart_id)
 
-    payment = cart.capture_payment(payment_method_id, billing_details)
+    payment = cart.capture_payment(payment_method_id, billing_details, pickup_time)
 
     if payment:
         # Handle post-payment fulfillment
