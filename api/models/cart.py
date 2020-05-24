@@ -101,7 +101,6 @@ class Cart(Model):
             )
         ])
 
-
     def capture_payment(self, payment_method_id, billing_details, pickup_time):
         self.update(actions=[
             Cart.billingDetails.set(billing_details),
@@ -174,6 +173,10 @@ class Cart(Model):
             if item.notes:
                 items_list += f"    Notes: {item.notes} \n"
 
+        if self.billingDetails.tip:
+            items_list += "\nTip: ${:0.2f}\n".format(
+                int(self.billingDetails.tip) / 100)
+
         items_list += "\nTotal Price: ${:0.2f}".format(
             int(self.totalPrice) / 100)
         return f"""-------------------------
@@ -204,6 +207,10 @@ Leo's Coney Island
                 items_list += f"<li style='margin-left: 25px'><h5>Notes: {item.notes} </h5></li>"
 
             items_list += '</ul>'
+        if self.billingDetails.tip:
+            items_list += "<br />Tip: <b>${:0.2f}</b><br />".format(
+                int(self.billingDetails.tip) / 100)
+
         items_list += "<br />Total Price: <b>${:0.2f}</b><br />".format(
             int(self.totalPrice) / 100)
         return f"""<html>-------------------------<br />
@@ -220,7 +227,7 @@ Leo's Coney Island
         carts = []
         for cart in Cart.statusIndex.query(hash_key=Cart.STATUS_PAID, range_key_condition=(
             Cart.updated_at >= datetime.today().replace(hour=0, minute=0, second=0)
-        )):
+        ), scan_index_forward=False):
             if as_dict:
                 carts.append(cart.as_dict())
             else:
