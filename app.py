@@ -26,3 +26,5 @@ def logger():
   return logging.getLogger('flask')
 
 application = create_app()
+
+# test

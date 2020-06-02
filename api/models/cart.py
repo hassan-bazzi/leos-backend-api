@@ -33,6 +33,12 @@ class BillingDetailsMap(MapAttribute):
     tip = UnicodeAttribute(null=True)
 
 
+class PaymentLogMap(MapAttribute):
+    transactionId = UnicodeAttribute(null=True)
+    status = UnicodeAttribute(null=True)
+    created_at = UTCDateTimeAttribute(null=True)
+
+
 class TransactionIdIndex(GlobalSecondaryIndex):
     class Meta:
         index_name = 'transactionIdIndex'
@@ -68,15 +74,19 @@ class Cart(Model):
     totalPrice = UnicodeAttribute(default='0')
     billingDetails = BillingDetailsMap(null=True)
     pickupTime = UnicodeAttribute(default='ASAP (15-20 minutes)')
+    paymentLog = ListAttribute(of=PaymentLogMap, default=[])
     status = UnicodeAttribute(default=STATUS_NEW)
     statusIndex = StatusIndex()
     transactionId = UnicodeAttribute(null=True)
     transactionIdIndex = TransactionIdIndex()
 
     def as_json(self):
+        billingDetails = self.billingDetails.as_dict() if self.billingDetails else {}
+        billingDetails['taxHuman']
         return json.loads(json.dumps({
             "id": self.id,
             "items": [item.as_dict() for item in self.items if self.items],
+            "billingDetails": billingDetails,
             "totalPrice": self.totalPrice
         }))
 
@@ -101,16 +111,34 @@ class Cart(Model):
             )
         ])
 
+    def update_items(self, items):
+        self.update(actions=[
+            Cart.items.set(items),
+            Cart.totalPrice.set(_calc_total(items))
+        ])
+
+    def _calc_total(self, newItems=[]):
+        items_list = newItems
+        if not newItems:
+            items_list = self.items
+
+        total = 0
+        for item in items_list:
+            total += int(self.item.totalPrice) * self.item.quantity
+
+        return total
+
     def capture_payment(self, payment_method_id, billing_details, pickup_time):
         self.update(actions=[
             Cart.billingDetails.set(billing_details),
             Cart.pickupTime.set(pickup_time)
         ])
 
-        self.add_tax()
+        if not self.paymentLog:
+            self.add_tax()
 
-        if billing_details.get('tip'):
-            self.add_tip(billing_details.get('tip'))
+            if billing_details.get('tip'):
+                self.add_tip(billing_details.get('tip'))
 
         logger.info(f'Charging {self.totalPrice} for cart #{self.id}')
         stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
@@ -121,9 +149,27 @@ class Cart(Model):
                 payment_method=payment_method_id,
                 confirm=True,
             )
-            logger.error(str(self.pickupTime))
-            print(str(self.pickupTime))
-        except stripe.error.CardError:
+            self.update(actions=[
+                Cart.paymentLog.set(
+                    Cart.paymentLog.append([{
+                        'status': 'success',
+                        'created_at': datetime.now(),
+                        'transactionId': intent.id
+
+                    }])
+                )
+            ])
+        except stripe.error.CardError as e:
+            print(str(e))
+            self.update(actions=[
+                Cart.paymentLog.set(
+                    Cart.paymentLog.append([{
+                        'status': 'declined',
+                        'created_at': datetime.now(),
+                        'transactionId': 'n/a'
+                    }])
+                )
+            ])
             self.update(actions=[
                 Cart.status.set(Cart.STATUS_PAYMENT_FAILED)
             ])

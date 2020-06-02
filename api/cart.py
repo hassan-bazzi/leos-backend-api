@@ -15,30 +15,37 @@ def cart_controller():
     if request.method == 'GET':
         logger.info('new cart request')
         if not request.cookies.get('cart_id'):
-            cart = Cart.add_new_cart()
+            return jsonify({})
         else:
             cart_id = request.cookies.get('cart_id')
             cart = Cart.get_cart(cart_id)
             if not cart or cart.status == Cart.STATUS_PAID:
                 cart = Cart.add_new_cart()
 
-        res = jsonify(cart.as_json())
-        res.set_cookie('cart_id', f'{cart.id}', max_age=60*60*24*7)
-
-        return res
+        return jsonify(cart.as_json())
     elif request.method == 'POST':
         cart_id = request.cookies.get('cart_id')
-        cart = Cart.get_cart(int(cart_id))
 
         if not cart_id:
-            return '', 400
+            cart = Cart.add_new_cart()
+        else:
+            cart = Cart.get_cart(int(cart_id))
 
         new_cart = request.json
         cart.update(actions=[
             Cart.items.set(new_cart.get('items', [])),
             Cart.totalPrice.set(str(new_cart.get('totalPrice')))
         ])
-        return jsonify(cart.as_json())
+
+        res = jsonify(cart.as_json())
+        res.set_cookie('cart_id', f'{cart.id}', max_age=60*60*24*7)
+
+        return res
+
+
+@cart_bp.route('/cart/list', methods=['GET'])
+def cart_list_controller():
+    return jsonify(Cart.get_paid_today(True))
 
 
 @cart_bp.route('/cart/pay', methods=['POST'])
@@ -58,12 +65,12 @@ def pay():
         }
     }
     if request.json.get('tip'):
-      try:
-        tip = int(float(request.json.get('tip')) * 100)
-        billing_details['tip'] = str(tip)
-      except:
-        logger.error(f'error converting tip: {request.json.get("tip")}')
-        pass
+        try:
+            tip = int(float(request.json.get('tip')) * 100)
+            billing_details['tip'] = str(tip)
+        except:
+            logger.error(f'error converting tip: {request.json.get("tip")}')
+            pass
 
     if not cart_id:
         return 'No cart', 400
@@ -73,7 +80,8 @@ def pay():
 
     cart = Cart.get_cart(cart_id)
 
-    payment = cart.capture_payment(payment_method_id, billing_details, pickup_time)
+    payment = cart.capture_payment(
+        payment_method_id, billing_details, pickup_time)
 
     if payment:
         # Handle post-payment fulfillment
@@ -117,11 +125,3 @@ def stripe_hook():
     cart.send_order_confirmations()
 
     return ''
-
-
-def _normalize_price(price):
-    if type(price) is int:
-        price = str(price)
-        leng = len(price)
-        price = price[:leng-2] + '.' + price[leng-2:]
-    return str(float(price))
