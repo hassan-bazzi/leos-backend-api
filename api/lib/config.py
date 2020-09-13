@@ -10,7 +10,8 @@ if env == 'prod':
     ]
     order_sms_recipients = [
         '313-516-8908',
-        '313-414-1412'
+        '313-414-1412',
+        '313-330-0900'
     ]
 else:
     order_recipients = [
