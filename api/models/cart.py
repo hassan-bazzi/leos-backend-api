@@ -82,7 +82,8 @@ class Cart(Model):
 
     def as_json(self):
         billingDetails = self.billingDetails.as_dict() if self.billingDetails else {}
-        billingDetails['taxHuman']
+        # billingDetails['taxHuman']
+        # TODO ^
         return json.loads(json.dumps({
             "id": self.id,
             "items": [item.as_dict() for item in self.items if self.items],
